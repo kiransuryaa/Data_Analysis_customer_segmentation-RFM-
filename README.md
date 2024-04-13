@@ -8,31 +8,31 @@ The purpose of this project is to conduct a Customer Segmentation Analysis for a
 The first step towards generating useful insights from the data was the data prepartion, quality assessment and data cleaning step. After the cleaning process exploratory data analysis on the dataset and identification customer purchasing behaviours to generate insights can be performed.
 
 In the data cleaning step the data quality of the following datasets were first assesed. After a data quality assessment the following data quality issues was observed and the necessary process to mitigate the issue was followed :
-### [CustomerDemographics_data_cleaning(click_here)]()
+### [CustomerDemographics_data_cleaning(click_here)](https://github.com/kiransuryaa/Data_Analysis_customer_segmentation-RFM-/blob/main/data_cleaning_customer_demographic.ipynb)
   - 1 Irrelevent column was present and such columns were dropped from the dataset.
   - There were 5 columns were Missing values were present. For such columns based on the volumne of the missing values either the records were dropped or appropiate values were imputed at places of missing values
   - For gender column there was no standardisation of data. Based on the values available the column data was standardised to remove data inconsistency.
   - The Date of Birth column was transformed to create a new feature column 'Age' and 'Age Group' to check for discripency of age distribution. An <b>outlier</b> was observed and the record was removed.
   - Checked whether there are duplicate records present in the dataset. In this dataset there were no duplicate records.
     
-### [NewCustomerList_data_cleaning(click_here)]()
+### [NewCustomerList_data_cleaning(click_here)](https://github.com/kiransuryaa/Data_Analysis_customer_segmentation-RFM-/blob/main/Data_cleaning_new_customer_data.ipynb)
   - 5 Irrelevent column was present and such columns were dropped from the dataset.
   - There were 4 columns were Missing values were present. For such columns based on the volumne of the missing values either the records were dropped or appropiate values were imputed at places of missing values
   - The Date of Birth column was transformed to create a new feature column 'Age' and 'Age Group' to check for discripency of age distribution.
   - There was no data inconsistency.
   - Checked whether there are duplicate records present in the dataset. In this dataset there were no duplicate records.
 
-### [Transaction_data_cleaning(click_here)]()
+### [Transaction_data_cleaning(click_here)](https://github.com/kiransuryaa/Data_Analysis_customer_segmentation-RFM-/blob/main/Data_cleaning_transaction_data.ipynb)
   - The product_first_sold_date column is not in datetime format. The data type of this column was changed from int64 to datetime format.
   - There were 7 columns were Missing values were present. For such columns based on the volumne of the missing values either the records were dropped or appropiate values were imputed at places of missing values
   - A new feature column 'Profit' was created which is basically the difference between list price and standard price.
   - There was no data inconsistency.
   - Checked whether there are duplicate records present in the dataset. In this dataset there were no duplicate records.
 
-### [CustomerAddress_data_cleaning(click_here)]()
+### [CustomerAddress_data_cleaning(click_here)](https://github.com/kiransuryaa/Data_Analysis_customer_segmentation-RFM-/blob/main/Data_cleaning_customer_address_data.ipynb)
   - For states column there was no standardisation of data. Based on the values available the column data was standardised to remove data inconsistency.
 
-### 2. [Exploratory Data Analysis on Customer Segments(click_here)]()
+### 2. [Exploratory Data Analysis on Customer Segments(click_here)](https://github.com/kiransuryaa/Data_Analysis_customer_segmentation-RFM-/blob/main/customer_RFM_analysis.ipynb)
   After the data cleaning process, exploratory analysis on the dataset is performed and the following insights are obtained :
 - <b>New vs Old Customers Age Distribution</b><br> 
     - Most New / Old Customers are aged between 40-49. The lowest age groups are under 20 and 80+ for Old and New Customers respectively.
@@ -57,7 +57,7 @@ In the data cleaning step the data quality of the following datasets were first 
     - In Victoria the proportion is quite even.
     - In Queensland the number of people owning a car is greater than who donot have a car.
 
-### 3. RFM Analysis and Customer Segmentation
+### 3. [RFM Analysis and Customer Segmentation(click_here)](https://github.com/kiransuryaa/Data_Analysis_customer_segmentation-RFM-/blob/main/customer_RFM_analysis.ipynb)
 In this stage of analysis the customer segmentation was done by developing an RFM Model. The RFM (Recency, Frequency, Monetary) analysis is a behavior-based approach grouping customers into segments. It groups the customers on the basis of their previous purchase transactions.
 
 In this analysis the customer segment was divided into 11 groups. The groups being : 
